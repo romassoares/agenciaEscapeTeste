@@ -1,0 +1,109 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+.swiper {
+    width: 100%;
+    height: auto;
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: "#666666";
+    }
+}
+.nav {
+    display: flex;
+    flex: 1;
+    height: 75px;
+    justify-content: center;
+    word-wrap: break-word;
+    align-items: center;
+    .cont-fluid {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        .nav-brand {
+            font-size: 1.2rem;
+            color: black;
+            flex: 1;
+        }
+        .listMenu {
+            flex: 1;
+            align-items: center;
+            ul {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    text-decoration: none;
+                    a {
+                        font-size: 0.55rem;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+#novidade,
+#contato,
+#sobre {
+    display: flex;
+    justify-content: center;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-content: center;
+    .column {
+        display: flex;
+        flex-direction: column;
+        // flex: 1;
+        justify-content: center;
+    }
+    hr {
+        justify-content: start;
+        width: 15%;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+button {
+    border: none;
+    padding: 5px;
+}
+
+#novidade {
+    margin-top: 20px;
+    color: white;
+    .card-image {
+        display: flex;
+        flex: 1;
+        min-width: 200px;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.background-black {
+    background-color: black;
+    height: 170px;
+}
