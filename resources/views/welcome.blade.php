@@ -9,12 +9,13 @@
 
     <link href="./css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/d7c48c440e.js" crossorigin="anonymous"></script>
 
 <body>
     <section id="header">
         <nav class="nav">
             <div class="cont-fluid">
-                <a class="nav-brand" href="#">Logo</a>
+                <a class="nav-brand" href="#header">Logo</a>
                 <div class="listMenu">
                     <ul class="align-baseline">
                         <li>
@@ -88,35 +89,40 @@
                     </div>
                 </div>
             </div>
-            <div class="row  m-auto">
-                <button>CONHEÇA MAIS </button>
+            <div class="row col-3  m-auto">
+                <button class="btn-black">CONHEÇA MAIS <i class="fas fa-angle-right"></i> </button>
             </div>
         </div>
     </section>
 
     <section id="novidade" class="background-black">
-
         <div class="space">
             <div class="row ">
                 <div class="col col-3 m-auto text-center">
                     <p class="text-center">
                         CONFIRA NOSSOS CASES DE SUCESSO
                     </p>
-
-                    <button>SAIBA MAIS </button>
+                    <button class="btn-white">SAIBA MAIS <i class="fas fa-angle-right"></i></button>
                 </div>
             </div>
             <div class="row">
-                <div class="card-image">
-                    <img class="" src="{{url('./imgs/CASE_001_INTERNA.jpg')}}" alt="">
-
+                <div class="card-image" style="background-image: url('./imgs/CASE_001_INTERNA.jpg'); background-repeat: no-repeat, repeat;background-size: cover; align-items:center;justify-content:center">
+                    <div class="title-image-transparent">
+                        <p>Lorem ipsum </p>
+                        <a href="#">ver case <i class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="card-image">
-                    <img class="" src="{{url('./imgs/CASE_002_INTERNA.jpg')}}" alt="">
-
+                <div class="card-image" style="background-image: url('./imgs/CASE_002_INTERNA.jpg');background-repeat: no-repeat, repeat;background-size: cover;display:flex; align-items:center;justify-content:center">
+                    <div class="title-image-transparent">
+                        <p>Lorem ipsum </p>
+                        <a href="#">ver case <i class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="card-image">
-                    <img class="" src="{{url('./imgs/CASE_003_INTERNA.jpg')}}" alt="">
+                <div class="card-image" style="background-image: url('./imgs/CASE_003_INTERNA.jpg');background-repeat: no-repeat, repeat;background-size: cover; align-items:center;justify-content:center">
+                    <div class="title-image-white">
+                        <p>Lorem ipsum </p>
+                        <a href="#">ver case <i class="fas fa-angle-right"></i></a>
+                    </div>
 
                 </div>
             </div>

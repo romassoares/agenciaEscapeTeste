@@ -10028,9 +10028,10 @@ h3 {
   display: flex;
   width: 70%;
   justify-content: space-between;
+  align-items: center;
 }
 .nav .cont-fluid .nav-brand {
-  font-size: 1.2rem;
+  font-size: 30px;
   color: black;
   flex: 1;
 }
@@ -10046,9 +10047,10 @@ h3 {
 }
 .nav .cont-fluid .listMenu ul li {
   text-decoration: none;
+  align-items: center;
 }
 .nav .cont-fluid .listMenu ul li a {
-  font-size: 0.55rem;
+  font-size: 16px;
   color: black;
 }
 
@@ -10080,7 +10082,7 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin: 10px;
+  margin: 15px;
 }
 
 .center {
@@ -10101,6 +10103,7 @@ button {
   display: flex;
   flex: 1;
   min-width: 200px;
+  min-height: 200px;
   flex-wrap: wrap;
   margin: 20px;
 }
@@ -10110,6 +10113,42 @@ button {
 }
 
 .background-black {
-  background-color: black;
-  height: 170px;
+  background-color: #111111;
+  height: 200px;
+}
+
+.btn-black {
+  background-color: #111111;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.btn-white {
+  background-color: #111111;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+}
+
+.title-image-white,
+.title-image-transparent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.title-image-white {
+  background-color: white;
+  color: #111111;
+}
+
+.title-image-transparent {
+  background-color: rgba(17, 17, 17, 0.8);
 }
