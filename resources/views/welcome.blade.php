@@ -18,23 +18,16 @@
                 <a class="nav-brand" href="#header">Logo</a>
                 <div class="listMenu">
                     <ul class="align-baseline">
-                        <li>
-                            <a href="#header">Home</a>
-                        </li>
-                        <li>
-                            <a href="#sobre">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#novidade">Novidades</a>
-                        </li>
-                        <li>
-                            <a href="#contato">Contato</a>
-                        </li>
+                        <li> <a href="#home">Home</a> </li>
+                        <li> <a href="#sobre">Sobre</a> </li>
+                        <li> <a href="#novidade">Novidades</a> </li>
+                        <li> <a href="#contato">Contato</a> </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
+
     <section id="slide">
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -74,16 +67,16 @@
                 <div class="col">
                     <div class="row">
                         <p> Various versions have evolved over the years, sometimes </p>
+                        <hr>
                     </div>
-                    <hr>
                     <div class="row">
                         <p> Various versions have evolved over the years, sometimes </p>
+                        <hr>
                     </div>
-                    <hr>
                     <div class="row">
                         <p> Various versions have evolved over the years, sometimes </p>
+                        <hr>
                     </div>
-                    <hr>
                     <div class="row">
                         <p> Various versions have evolved over the years, sometimes </p>
                     </div>
@@ -123,42 +116,79 @@
                         <p>Lorem ipsum </p>
                         <a href="#">ver case <i class="fas fa-angle-right"></i></a>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
-        <div class="space"></div>
+    <section>
+        <div class="img-contato" style="background-image: url('./imgs/2020_08_27_hatteras_video_banner.jpg');background-repeat: no-repeat, repeat;background-size: cover;align-items:center;justify-content:center">
+            <button type="button" data-toggle="modal" data-target="#exampleModal">
+                <i class="far fa-play-circle"></i>
+            </button>
+        </div>
+
     </section>
 
+    <section>
+        <div class="alinharCentro">
+            <div class="row center-contato">
+                <div class="col-4">
+                    Assine a nossa newsletter e receba
+                    direto no seu e-mail nossos insights,
+                    informações e novidades.
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <input class="form-control" type="text" placeholder="Name">
+                    </div>
+                    <div class="row">
+                        <input class="form-control" type="text" placeholder="Email">
+                        <button class="btn-black col-3 mt-2">ok <i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            // direction: 'horizontal',
             loop: true,
-
-            // If we need pagination
-            // pagination: {
-            //     el: '.swiper-pagination',
-            // },
-
-            // Navigation arcols
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
-            // And if we need scrollbar
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
         });
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').trigger('focus')
+        })
     </script>
 </body>
 

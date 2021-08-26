@@ -10031,23 +10031,20 @@ h3 {
   align-items: center;
 }
 .nav .cont-fluid .nav-brand {
-  font-size: 30px;
+  font-size: 26px;
   color: black;
   flex: 1;
 }
 .nav .cont-fluid .listMenu {
   flex: 1;
-  align-items: center;
 }
 .nav .cont-fluid .listMenu ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
-  align-items: center;
 }
 .nav .cont-fluid .listMenu ul li {
   text-decoration: none;
-  align-items: center;
 }
 .nav .cont-fluid .listMenu ul li a {
   font-size: 16px;
@@ -10073,7 +10070,6 @@ h3 {
   justify-content: center;
 }
 .space hr {
-  justify-content: start;
   width: 15%;
 }
 .space .row {
@@ -10115,6 +10111,7 @@ button {
 .background-black {
   background-color: #111111;
   height: 200px;
+  margin-bottom: 250px;
 }
 
 .btn-black {
@@ -10142,13 +10139,43 @@ button {
   padding: 10px;
   width: 120px;
   height: 120px;
+  text-transform: uppercase;
 }
 
 .title-image-white {
   background-color: white;
+}
+.title-image-white a {
   color: #111111;
 }
 
 .title-image-transparent {
   background-color: rgba(17, 17, 17, 0.8);
+}
+.title-image-transparent a {
+  color: white;
+}
+
+.img-contato {
+  max-width: 100vw;
+  height: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-contato button {
+  background-color: transparent;
+  color: white;
+  font-size: 34px;
+}
+
+.alinharCentro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.center-contato {
+  display: flex;
+  justify-content: center;
 }
